@@ -22,6 +22,7 @@ INSTALLED_APPS = [
 
     "base.apps.BaseConfig",
     "preferences.apps.PreferencesConfig",
+    "pages.apps.PagesConfig",
 ]
 
 MIDDLEWARE = [
