@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     # Third Party Apps
     'phonenumber_field',
     'bootstrap5',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -121,7 +122,10 @@ else:
 AUTH_USER_MODEL = 'accounts.User'
 LOGIN_REDIRECT_URL = 'accounts:dashboard'
 LOGIN_URL = 'accounts:login'
-LOGOUT_REDIRECT_URL = 'accounts:login'
+LOGOUT_REDIRECT_URL = 'pages:home'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Django Crispy Forms
+CRISPY_TEMPLATE_PACK = 'uni_form'

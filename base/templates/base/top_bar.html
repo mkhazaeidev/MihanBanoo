@@ -1,6 +1,48 @@
+{% load local_data %}
+{% load owner_info %}
+{% language as pages_language %}
 <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-    <div class="container {% if page_language == 'en' %}text-right{% endif %}">
-        <i class="icofont-phone"></i> +1 5589 55488 55
-        <i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 11:00 AM - 23:00 PM
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <i class="icofont-phone"></i>
+                {% if pages_language == "en" %}
+                    {% owner_phone_number_en %}
+                {% else %}
+                    {% owner_phone_number_fa %}
+                {% endif %}
+                <i class="icofont-clock-time icofont-rotate-180"></i> {% owner_work_time %}
+            </div>
+            <div class="col-6 text-right">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'accounts:dashboard' %}">
+                        {% if user.username %}
+                            {{ user.username }}
+                        {% else %}
+                            {% if pages_language == "en" %}
+                                Dashboard
+                            {% else %}
+                                پنل کاربری
+                            {% endif %}
+                        {% endif %}
+                        <a href="{% url 'accounts:logout' %}" class="text-danger">
+                            {% if pages_language == "en" %}
+                                (Logout)
+                            {% else %}
+                                (خروج)
+                            {% endif %}
+                        </a>
+                    </a>
+                {% else %}
+                    <a href="{% url 'accounts:login' %}">
+                        {% if pages_language == "en" %}
+                            Login
+                        {% else %}
+                            ورود به حساب کاربری
+                        {% endif %}
+                    </a>
+                {% endif %}
+            </div>
+        </div>
     </div>
 </section>

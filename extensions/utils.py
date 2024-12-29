@@ -34,6 +34,21 @@ def persian_week_days(day):
     return day
 
 
+def english_week_days(day):
+    week_days = {
+        '1': 'Saturday',
+        '2': 'Sunday',
+        '3': 'Monday',
+        '4': 'Tuesday',
+        '5': 'Wednesday',
+        '6': 'Thursday',
+        '7': 'Friday',
+    }
+    for en_day, fa_day in week_days.items():
+        day = day.replace(en_day, fa_day)
+    return day
+
+
 def jalali_month_name(month):
     jalai_month = ['فرودین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور', 'مهر', 'آبان', 'آذر', 'دی', 'بهمن', 'اسفند']
     return str(jalai_month[month - 1])

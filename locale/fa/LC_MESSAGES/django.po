@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-29 22:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: accounts/templates/accounts/login.html:9
+#: accounts/templates/accounts/login.html:19
+msgid "Login Page"
+msgstr "صفحه ورود"
+
+#: accounts/templates/accounts/login.html:20
+msgid "Hello there, Sign in and start managing your Admin Template"
+msgstr "سلام، وارد شوید و مدیریت قالب مدیریت خود را شروع کنید"
+
+#: accounts/templates/accounts/login.html:29
+msgid "Remember Me"
+msgstr "مرا به خاطر بسپار"
+
+#: accounts/templates/accounts/login.html:34
+msgid "Forgot Password?"
+msgstr "رمز عبور را فراموش کرده اید؟"
+
+#: accounts/templates/accounts/login.html:38
+#: accounts/templates/accounts/password_change_form.html:30
+#: accounts/templates/accounts/password_reset_confirm.html:30
+#: accounts/templates/accounts/password_reset_form.html:30
+msgid "Submit"
+msgstr "ارسال"
+
+#: accounts/templates/accounts/login.html:41
+msgid "Back to Home"
+msgstr "بازگشت به صفحه اصلی"
+
+#: accounts/templates/accounts/login.html:44
+msgid "Don't have an account?"
+msgstr "حساب کاربری ندارید؟"
+
+#: accounts/templates/accounts/login.html:44
+msgid "Sign up"
+msgstr "ثبت نام"
+
+#: accounts/templates/accounts/password_change_done.html:9
+#: accounts/templates/accounts/password_change_done.html:19
+#: accounts/templates/accounts/password_reset_complete.html:10
+#: accounts/templates/accounts/password_reset_complete.html:20
+#: accounts/templates/accounts/password_reset_done.html:9
+#: accounts/templates/accounts/password_reset_done.html:19
+msgid "Password reset"
+msgstr "بازنشانی رمز عبور"
+
+#: accounts/templates/accounts/password_change_done.html:20
+#: accounts/templates/accounts/password_reset_complete.html:21
+#: accounts/templates/accounts/password_reset_done.html:20
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr "اگر حسابی با ایمیلی که وارد کرده‌اید وجود داشته باشد، دستورالعمل‌های تنظیم رمز عبور را برای شما ایمیل کرده‌ایم. شما باید به زودی آنها را دریافت کنید."
+
+#: accounts/templates/accounts/password_change_done.html:22
+msgid ""
+"If you don't receive an email, please make sure you’ve entered the address "
+"you registered with, and check your spam folder."
+msgstr "اگر ایمیلی دریافت نکردید، لطفاً مطمئن شوید که آدرسی را که با آن ثبت نام کرده اید وارد کرده اید و پوشه هرزنامه خود را بررسی کنید."
+
+#: accounts/templates/accounts/password_change_done.html:26
+#: accounts/templates/accounts/password_reset_complete.html:27
+#: accounts/templates/accounts/password_reset_confirm.html:26
+#: accounts/templates/accounts/password_reset_done.html:25
+#: accounts/templates/accounts/password_reset_form.html:26
+msgid "Back to login"
+msgstr "بازگشت به صفحه ورود"
+
+#: accounts/templates/accounts/password_change_form.html:9
+#: accounts/templates/accounts/password_change_form.html:19
+msgid "Change Password"
+msgstr "تغییر رمز عبور"
+
+#: accounts/templates/accounts/password_change_form.html:20
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr "لطفاً برای حفظ امنیت رمز عبور قدیمی خود را وارد کنید و سپس رمز عبور جدید خود را دو بار وارد کنید تا بتوانیم تأیید کنیم که آن را به درستی وارد کرده اید."
+
+#: accounts/templates/accounts/password_change_form.html:26
+msgid "Back to Dashboard"
+msgstr "بازگشت به داشبورد"
+
+#: accounts/templates/accounts/password_reset_complete.html:23
+#: accounts/templates/accounts/password_reset_done.html:21
+msgid ""
+"If you don’t receive an email, please make sure you’ve entered the address "
+"you registered with, and check your spam folder."
+msgstr "اگر ایمیلی دریافت نکردید، لطفاً مطمئن شوید که آدرسی را که با آن ثبت نام کرده اید وارد کرده اید و پوشه هرزنامه خود را بررسی کنید."
+
+#: accounts/templates/accounts/password_reset_confirm.html:9
+#: accounts/templates/accounts/password_reset_confirm.html:19
+#: accounts/templates/accounts/password_reset_form.html:9
+#: accounts/templates/accounts/password_reset_form.html:19
+msgid "Reset Password"
+msgstr "بازنشانی رمز عبور"
+
+#: accounts/templates/accounts/password_reset_confirm.html:20
+#: accounts/templates/accounts/password_reset_form.html:20
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr "رمز عبور خود را فراموش کرده اید؟ آدرس ایمیل خود را در زیر وارد کنید، و ما دستورالعمل‌هایی را برای تنظیم ایمیل جدید ارسال می‌کنیم."
+
+#: accounts/templates/accounts/password_reset_email.html:3
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr "شما این ایمیل را دریافت می‌کنید زیرا درخواست بازنشانی رمز عبور برای حساب کاربری خود در %(site_name) کرده‌اید."
+
+#: accounts/templates/accounts/password_reset_email.html:5
+msgid "Please go to the following page and choose a new password:"
+msgstr "لطفا به صفحه زیر بروید و یک رمز عبور جدید انتخاب کنید:"
+
+#: accounts/templates/accounts/password_reset_email.html:9
+msgid "Your username, in case you’ve forgotten:"
+msgstr ""
+
+#: accounts/templates/accounts/password_reset_email.html:11
+msgid "Thanks for using our site!"
+msgstr "نام کاربری شما، در صورتی که فراموش کرده باشید:"
+
+#: accounts/templates/accounts/password_reset_email.html:13
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "The %(site_name)s team"
+
+#: base/templates/base/header.html:13 pages/templates/pages/home_page.html:5
+msgid "Home"
+msgstr "خانه"
+
+#: base/templates/base/header.html:15
+msgid "Blogs"
+msgstr "وبلاگ"
+
+#: base/templates/base/header.html:16
+msgid "About"
+msgstr "درباره ما"
+
+#: base/templates/base/header.html:17
+msgid "Contact"
+msgstr "ارتباط با ما"
+
+#: base/templates/base/header.html:23 base/templates/base/header.html:27
+#: config/settings.py:100
+msgid "Persian"
+msgstr "فارسی"
+
+#: base/templates/base/header.html:24 base/templates/base/header.html:26
+#: config/settings.py:99
+msgid "English"
+msgstr "انگلیسی"
+
+#: base/templates/base/hero_section.html:35
+msgid "Contact us"
+msgstr "ارتباط با ما"
+
+#: pages/apps.py:8
+msgid "Pages"
+msgstr "صفحات"
+
+#: pages/models.py:22
+msgid "PhotoSlider"
+msgstr "اسلاید"
+
+#: pages/models.py:23
+msgid "PhotoSliders"
+msgstr "اسلاید ها"
+
+#: pages/models.py:40 pages/models.py:41
+msgid "AboutUs"
+msgstr "درباره ما"
+
+#: preferences/models.py:62 preferences/models.py:63
+msgid "WebsiteOwner"
+msgstr "مالک سایت"
