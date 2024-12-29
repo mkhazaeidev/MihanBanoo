@@ -1,0 +1,50 @@
+{% extends 'admin_panel/login.html' %}
+{% load bootstrap5 %}
+{% load i18n %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block title %}
+    {% translate "Login Page" %}
+{% endblock %}
+
+{% block main %}
+    {% bootstrap_messages %}
+    <div class="login-area login-s2">
+        <div class="container">
+            <div class="login-box ptb--100">
+                <form method="post" action="" enctype="multipart/form-data">
+                    <div class="login-form-head">
+                        <h4>{% trans 'Login Page' %}</h4>
+                        <p>{% trans 'Hello there, Sign in and start managing your Admin Template' %}</p>
+                    </div>
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    <div class="row mb-4 rmber-area">
+                        <div class="col-6">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                <label class="custom-control-label" for="customControlAutosizing">
+                                    {% trans 'Remember Me' %}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a href="{% url 'accounts:password_reset' %}">{% trans 'Forgot Password?' %}</a>
+                        </div>
+                    </div>
+                    <div class="submit-btn-area">
+                        <button id="form_submit" type="submit">{% trans 'Submit' %} <i class="ti-arrow-right"></i></button>
+                    </div>
+                    <div class="submit-btn-area mt-3">
+                        <a href="{% url 'pages:home' %}">{% trans 'Back to Home' %}</a>
+                    </div>
+                    <div class="form-footer text-center mt-2">
+                        <p class="text-muted">{% trans "Don't have an account?" %} <a href="#">{% trans 'Sign up' %}</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

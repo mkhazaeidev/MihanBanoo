@@ -22,8 +22,13 @@ INSTALLED_APPS = [
 
     "extensions",
     "base.apps.BaseConfig",
+    "accounts.apps.AccountsConfig",
     "preferences.apps.PreferencesConfig",
     "pages.apps.PagesConfig",
+
+    # Third Party Apps
+    'phonenumber_field',
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -111,6 +116,12 @@ if DEBUG:
 else:
     STATIC_ROOT = ''
     MEDIA_ROOT = ''
+
+# Custom User model
+AUTH_USER_MODEL = 'accounts.User'
+LOGIN_REDIRECT_URL = 'accounts:dashboard'
+LOGIN_URL = 'accounts:login'
+LOGOUT_REDIRECT_URL = 'accounts:login'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

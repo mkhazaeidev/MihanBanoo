@@ -1,0 +1,37 @@
+{% load static %}
+
+<div class="sidebar-menu">
+    <div class="sidebar-header">
+        <div class="logo">
+            <a href="index.html"><img src="{% static 'admin_panel/images/icon/logo.png' %}" alt="logo"></a>
+        </div>
+    </div>
+    <div class="main-menu">
+        <div class="menu-inner">
+            <nav>
+                <ul class="metismenu" id="menu">
+                    <li class="active">
+                        <a href="javascript:void(0)" aria-expanded="true"><i
+                                class="ti-dashboard"></i><span>dashboard</span></a>
+                        <ul class="collapse">
+                            <li class="active"><a href="{% url 'accounts:dashboard' %}">Dashboard</a></li>
+                            <li><a href="index2.html">Ecommerce dashboard</a></li>
+                            <li><a href="index3.html">SEO dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layout-sidebar-left"></i>
+                            <span>
+                                Account
+                            </span>
+                        </a>
+                        <ul class="collapse">
+                            <li><a href="{% url 'accounts:password_change' %}">Change Password</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'accounts:logout' %}"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
