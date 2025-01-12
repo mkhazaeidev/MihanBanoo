@@ -9,7 +9,10 @@ SECRET_KEY = "django-insecure-^282jc3-hdbtsh7+&wlw@7_xirj%%x@=ewvl&#8mkkkl&=0re2
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = []
+if DEBUG:
+    ALLOWED_HOSTS = []
+else:
+    ALLOWED_HOSTS = ['mihanbaanoo.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -71,6 +74,16 @@ DATABASES = {
     }
 }
 
+if not DEBUG:
+    DATABASES["default"] = {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mihan_banaoo_db',
+        'USER': 'mihan_banoo_user',
+        'PASSWORD': 'BSAB2202@MBDB',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -115,8 +128,8 @@ if DEBUG:
         'base/static',
     ]
 else:
-    STATIC_ROOT = ''
-    MEDIA_ROOT = ''
+    STATIC_ROOT = '/home/mihanbaanoocom/mihanbaanoo/public/static/'
+    MEDIA_ROOT = '/home/mihanbaanoocom/mihanbaanoo/public/media/'
 
 # Custom User model
 AUTH_USER_MODEL = 'accounts.User'
