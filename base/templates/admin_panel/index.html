@@ -1,4 +1,6 @@
 {% load static %}
+{% load local_data %}
+{% language as pages_language %}
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -19,7 +21,11 @@
     <!-- others css -->
     <link rel="stylesheet" href="{% static 'admin_panel/css/typography.css' %}">
     <link rel="stylesheet" href="{% static 'admin_panel/css/default-css.css' %}">
-    <link rel="stylesheet" href="{% static 'admin_panel/css/styles.css' %}">
+    {% if pages_language == "en" %}
+        <link rel="stylesheet" href="{% static 'admin_panel/css/styles.css' %}">
+    {% else %}
+        <link rel="stylesheet" href="{% static 'admin_panel/css/rtl_styles.css' %}">
+    {% endif %}
     <link rel="stylesheet" href="{% static 'admin_panel/css/responsive.css' %}">
     <!-- modernizr css -->
     <script src="{% static 'admin_panel/js/vendor/modernizr-2.8.3.min.js' %}"></script>
@@ -30,8 +36,16 @@
 <!-- page container area start -->
 <div class="page-container">
     {% include 'admin_panel/sidebar.html' %}
+    <div class="main-content">
+        {% include 'admin_panel/header_area.html' %}
 
-    {% block main %}{% endblock %}
+        {% include 'admin_panel/pages_title_area.html' %}
+
+        <div class="main-content-inner">
+            {% block main %}{% endblock %}
+        </div>
+    </div>
+
 
     {% include 'admin_panel/footer.html' %}
 </div>
