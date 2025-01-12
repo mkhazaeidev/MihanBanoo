@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-12 12:00+0000\n"
+"POT-Creation-Date: 2025-01-12 23:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,7 @@ msgstr "نام"
 #: base/templates/admin_panel/pages_title_area.html:6
 #: base/templates/admin_panel/pages_title_area.html:9
 #: base/templates/admin_panel/sidebar.html:13
+#: base/templates/base/top_bar.html:21
 msgid "Dashboard"
 msgstr "داشبورد"
 
@@ -43,7 +44,7 @@ msgstr "نام جدول"
 
 #: accounts/templates/accounts/index.html:27
 msgid "New"
-msgstr "ایجاد"
+msgstr "جدید"
 
 #: accounts/templates/accounts/login.html:9
 #: accounts/templates/accounts/login.html:19
@@ -190,7 +191,7 @@ msgid "Search..."
 msgstr "جستجو..."
 
 #: base/templates/admin_panel/pages_title_area.html:8
-#: base/templates/base/header.html:13 pages/templates/pages/home_page.html:5
+#: base/templates/base/header.html:14 pages/templates/pages/home_page.html:5
 msgid "Home"
 msgstr "خانه"
 
@@ -207,31 +208,47 @@ msgstr "خروج"
 msgid "Account"
 msgstr "حساب کاربری"
 
-#: base/templates/base/header.html:15
+#: base/templates/base/footer.html:17
+msgid "&copy; Copyright"
+msgstr "&copy; کپی رایت"
+
+#: base/templates/base/footer.html:17
+msgid "All Rights Reserved"
+msgstr "تمامی حقوق محفوظ است"
+
+#: base/templates/base/footer.html:20
+msgid "Designed by "
+msgstr "طراحی شده توسط "
+
+#: base/templates/base/header.html:16
 msgid "Blogs"
 msgstr "وبلاگ"
 
-#: base/templates/base/header.html:16
+#: base/templates/base/header.html:17
 msgid "About"
 msgstr "درباره ما"
 
-#: base/templates/base/header.html:17
+#: base/templates/base/header.html:18
 msgid "Contact"
 msgstr "ارتباط با ما"
 
-#: base/templates/base/header.html:23 base/templates/base/header.html:27
-#: config/settings.py:100
+#: base/templates/base/header.html:24 base/templates/base/header.html:28
+#: config/settings.py:113
 msgid "Persian"
 msgstr "فارسی"
 
-#: base/templates/base/header.html:24 base/templates/base/header.html:26
-#: config/settings.py:99
+#: base/templates/base/header.html:25 base/templates/base/header.html:27
+#: config/settings.py:112
 msgid "English"
 msgstr "انگلیسی"
 
-#: base/templates/base/hero_section.html:35
+#: base/templates/base/hero_section.html:34
 msgid "Contact us"
 msgstr "ارتباط با ما"
+
+#: base/templates/base/top_bar.html:24
+msgid "(Logout)"
+msgstr "(خروج)"
 
 #: pages/apps.py:8
 msgid "Pages"
@@ -254,103 +271,149 @@ msgid "Preferences"
 msgstr "تنظیمات"
 
 #: preferences/models.py:12
-msgid "Page Title"
-msgstr "عنوان صفحه"
+msgid "English Page Title"
+msgstr "عنوان انگلیسی صفحه"
 
-#: preferences/models.py:14
+#: preferences/models.py:14 preferences/models.py:21
 msgid "The name that appears at the top of the page as the title."
 msgstr "نامی که در بالای صفحه برای عنوان ظاهر می شود."
 
 #: preferences/models.py:19
-msgid "Main Title"
-msgstr "عنوان اصلی"
+msgid "Page Title"
+msgstr "عنوان صفحه"
 
-#: preferences/models.py:21
+#: preferences/models.py:26
+msgid "English Main Title"
+msgstr "عنوان انگلیسی اصلی"
+
+#: preferences/models.py:28 preferences/models.py:35
 msgid "The name that is used as the main name of the site or as the site logo."
 msgstr "نامی که به عنوان نام اصلی سایت یا لوگوی سایت استفاده می شود."
 
-#: preferences/models.py:28
+#: preferences/models.py:33
+msgid "Main Title"
+msgstr "عنوان اصلی"
+
+#: preferences/models.py:42
 msgid "Logo Image"
 msgstr "تصویر لوگو"
 
-#: preferences/models.py:34
+#: preferences/models.py:48
 msgid "Logo Touch icon"
 msgstr "نماد لمسی لوگو"
 
-#: preferences/models.py:39
+#: preferences/models.py:53
 msgid "Description"
 msgstr "توضیحات"
 
-#: preferences/models.py:41
+#: preferences/models.py:55
 msgid "A brief explanation of the goals of the site."
 msgstr "توضیح مختصری در مورد اهداف سایت."
 
-#: preferences/models.py:45
+#: preferences/models.py:59
 msgid "SEO Keywords"
 msgstr "کلمات کلیدی SEO"
 
-#: preferences/models.py:47
+#: preferences/models.py:61
 msgid "Keywords to help Google search engine."
 msgstr "کلمات کلیدی برای کمک به موتور جستجوی گوگل"
 
-#: preferences/models.py:57 preferences/models.py:58
+#: preferences/models.py:71 preferences/models.py:72
 msgid "Website Details"
 msgstr "جزئیات وب سایت"
 
-#: preferences/models.py:63
+#: preferences/models.py:77
 msgid "Saturday"
 msgstr "شنبه"
 
-#: preferences/models.py:64
+#: preferences/models.py:78
 msgid "Sunday"
 msgstr "یکشنبه"
 
-#: preferences/models.py:65
+#: preferences/models.py:79
 msgid "Monday"
 msgstr "دوشنبه"
 
-#: preferences/models.py:66
+#: preferences/models.py:80
 msgid "Tuesday"
 msgstr "سه شنبه"
 
-#: preferences/models.py:67
+#: preferences/models.py:81
 msgid "Wednesday"
 msgstr "چهارشنبه"
 
-#: preferences/models.py:68
+#: preferences/models.py:82
 msgid "Thursday"
 msgstr "پنج شنبه"
 
-#: preferences/models.py:69
+#: preferences/models.py:83
 msgid "Friday"
 msgstr "جمعه"
 
-#: preferences/models.py:74
-#, fuzzy
-#| msgid "WebsiteOwner"
+#: preferences/models.py:88 preferences/models.py:126 preferences/models.py:127
 msgid "Website Owner"
 msgstr "مالک سایت"
 
-#: preferences/models.py:75
-msgid "Select the site owner from among users to display contact information."
-msgstr "برای نمایش اطلاعات تماس، مالک سایت را از بین کاربران انتخاب کنید."
-
-#: preferences/models.py:79
+#: preferences/models.py:92
 msgid "Start work time"
 msgstr "زمان شروع کار"
 
-#: preferences/models.py:85
+#: preferences/models.py:98
 msgid "End work time"
 msgstr "زمان پایان کار"
 
-#: preferences/models.py:95
+#: preferences/models.py:108
 msgid "The first working day of the week"
 msgstr "اولین روز کاری هفته"
 
-#: preferences/models.py:103
+#: preferences/models.py:116
 msgid "Last working day of the week"
 msgstr "آخرین روز کاری هفته"
 
-#: preferences/models.py:113 preferences/models.py:114
-msgid "WebsiteOwner"
-msgstr "مالک سایت"
+#: preferences/templatetags/owner_info.py:17
+msgid "Owner Name"
+msgstr "نام مالک سایت"
+
+#: preferences/templatetags/owner_info.py:26
+#: preferences/templatetags/owner_info.py:35
+msgid "Owner Phone Number"
+msgstr "تلفن مالک سایت"
+
+#: preferences/templatetags/owner_info.py:44
+msgid "Owner Email"
+msgstr "ایمیل مالک سایت"
+
+#: preferences/templatetags/owner_info.py:58
+msgid "Owner Work Time"
+msgstr "تایم کاری مالک سایت"
+
+#: preferences/templatetags/owner_info.py:67
+msgid "Owner Address "
+msgstr "آدرس مالک سایت"
+
+#: preferences/templatetags/website_details.py:18
+msgid "Website Page Name"
+msgstr "نام وب سایت"
+
+#: preferences/templatetags/website_details.py:30
+msgid "Website Title"
+msgstr "عنوان وب سایت"
+
+#: preferences/templatetags/website_details.py:39
+msgid "Website Logo Image"
+msgstr "تصویر لوگو وب سایت"
+
+#: preferences/templatetags/website_details.py:48
+msgid "Website Description"
+msgstr "توضیحات وب سایت"
+
+#: preferences/templatetags/website_details.py:57
+msgid "Website Seo Keyword"
+msgstr "کلمات کلیدی وب سایت"
+
+#~ msgid ""
+#~ "Select the site owner from among users to display contact information."
+#~ msgstr "برای نمایش اطلاعات تماس، مالک سایت را از بین کاربران انتخاب کنید."
+
+#~ msgid "WebsiteOwner"
+#~ msgstr "مالک سایت"

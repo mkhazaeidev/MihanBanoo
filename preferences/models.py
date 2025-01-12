@@ -7,11 +7,25 @@ from accounts.models import User
 
 
 class WebsiteDetails(SingletonModel):
+    page_title_en = models.CharField(
+        max_length=100,
+        verbose_name=_("English Page Title"),
+        blank=True,
+        help_text=_("The name that appears at the top of the page as the title.")
+    )
+
     page_title = models.CharField(
         max_length=100,
         verbose_name=_("Page Title"),
         blank=True,
         help_text=_("The name that appears at the top of the page as the title.")
+    )
+
+    main_title_en = models.CharField(
+        max_length=200,
+        verbose_name=_("English Main Title"),
+        blank=True,
+        help_text=_("The name that is used as the main name of the site or as the site logo.")
     )
 
     main_title = models.CharField(
@@ -72,7 +86,6 @@ class WebsiteOwner(SingletonModel):
         User,
         on_delete=models.CASCADE,
         verbose_name=_("Website Owner"),
-        help_text=_("Select the site owner from among users to display contact information.")
     )
 
     start_work_time = models.TimeField(
@@ -110,5 +123,5 @@ class WebsiteOwner(SingletonModel):
         return reverse('accounts:dashboard')
 
     class Meta:
-        verbose_name = _('WebsiteOwner')
-        verbose_name_plural = _('WebsiteOwner')
+        verbose_name = _('Website Owner')
+        verbose_name_plural = _('Website Owner')

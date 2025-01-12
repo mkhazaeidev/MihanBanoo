@@ -1554,7 +1554,6 @@ section {
 --------------------------------------------------------------*/
 #footer {
     direction: rtl;
-    text-align: right;
     background: #35322d;
     color: #fff;
     font-size: 14px;
@@ -1572,7 +1571,7 @@ section {
 }
 
 #footer p {
-    font-size: 15;
+    font-size: 15px;
     font-style: italic;
     padding: 0;
     margin: 0 0 40px 0;
@@ -1602,9 +1601,12 @@ section {
 }
 
 #footer .copyright {
+    direction: rtl;
     margin: 0 0 5px 0;
 }
 
 #footer .credits {
+    direction: rtl;
+    float: right;
     font-size: 13px;
 }

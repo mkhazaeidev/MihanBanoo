@@ -1,7 +1,6 @@
 {% load static %}
-{% load i18n %}
-{% load local_data %}
-{% language as page_language %}
+{% load i18n website_details owner_info %}
+{% get_current_language as current_language %}
 <section id="hero">
     <div class="hero-container">
         <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -17,14 +16,14 @@
                             <div class="carousel-container">
                                 <div class="carousel-content">
                                     <h2 class="animated fadeInDown"><span>
-                                        {% if page_language == "en" %}
+                                        {% if current_language == "en" %}
                                             {{ slider.en_title }}
                                         {% else %}
                                             {{ slider.fa_title }}
                                         {% endif %}
                                     </span></h2>
                                     <p class="animated fadeInUp">
-                                        {% if page_language == "en" %}
+                                        {% if current_language == "en" %}
                                             {{ slider.en_text | safe }}
                                         {% else %}
                                             {{ slider.fa_text | safe }}

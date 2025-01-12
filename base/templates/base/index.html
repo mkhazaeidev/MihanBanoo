@@ -1,19 +1,18 @@
 {% load static %}
-{% load i18n %}
-{% load local_data %}
-{% language as page_language %}
+{% load i18n website_details %}
+{% get_current_language as current_language %}
 
 <!DOCTYPE html>
-<html lang="{{ page_language }}">
+<html lang="{{ current_language }}">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% website_page_title %} - {% block title %}{% endblock %}</title>
 
-    <meta content="{% block description %}{% endblock %}" name="description">
-    <meta content="{% block keywords %}{% endblock %}" name="keywords">
+    <meta content="{% block description %}{% website_description %}{% endblock %}" name="description">
+    <meta content="{% block keywords %}{% website_seo_keyword %}{% endblock %}" name="keywords">
 
     <!-- Favicons -->
     <link href="{% static 'base/assets/images/favicon.png' %}" rel="icon">
@@ -31,7 +30,7 @@
     <link href="{% static 'base/assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
     <link href="{% static 'base/assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
 
-    {% if page_language == 'fa' %}
+    {% if current_language == 'fa' %}
         <!-- Template Main CSS File -->
         <link rel='stylesheet' href='{% static 'base/css/rtl_styles.css' %}'>
     {% else %}

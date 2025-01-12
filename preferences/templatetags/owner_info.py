@@ -3,6 +3,7 @@ from django.utils.translation import get_language
 from preferences.models import WebsiteOwner
 from preferences.templatetags.local_data import convert_number_to_persian
 from extensions.utils import persian_week_days, english_week_days
+from django.utils.translation import gettext_lazy as _
 
 register = template.Library()
 
@@ -13,7 +14,7 @@ def owner_full_name():
         website_owner = WebsiteOwner.objects.first()
         return website_owner.owner.get_full_name()
     except:
-        return "نام مالک سایت"
+        return _("Owner Name")
 
 
 @register.simple_tag
@@ -22,7 +23,7 @@ def owner_phone_number_fa():
         website_owner = WebsiteOwner.objects.first()
         return convert_number_to_persian(website_owner.owner.phone_number)
     except:
-        return "شماره تماس مالک سایت"
+        return _("Owner Phone Number")
 
 
 @register.simple_tag
@@ -31,7 +32,7 @@ def owner_phone_number_en():
         website_owner = WebsiteOwner.objects.first()
         return website_owner.owner.phone_number
     except:
-        return "Owner Phone Number"
+        return _("Owner Phone Number")
 
 
 @register.simple_tag
@@ -40,8 +41,7 @@ def owner_email():
         website_owner = WebsiteOwner.objects.first()
         return website_owner.owner.email
     except:
-        return "ایمیل مالک سایت"
-
+        return _("Owner Email")
 
 @register.simple_tag
 def owner_work_time():
@@ -55,7 +55,7 @@ def owner_work_time():
             work_time = convert_number_to_persian(f'از {website_owner.strat_work_time.strftime("%H:%M")} تا {website_owner.end_work_time.strftime("%H:%M")}')
         return work_days + work_time
     except:
-        return "ساعت پاسخگویی مالک سایت"
+        return _("Owner Work Time")
 
 
 @register.simple_tag
@@ -64,5 +64,5 @@ def owner_address():
         website_owner = WebsiteOwner.objects.first()
         address = website_owner.owner.addresses.get_address()
     except:
-        address = 'آدرس مالک سایت ثبت نشده است'
+        address = _("Owner Address ")
     return address

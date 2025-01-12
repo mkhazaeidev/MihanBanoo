@@ -77,7 +77,7 @@ DATABASES = {
 if not DEBUG:
     DATABASES["default"] = {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mihan_banaoo_db',
+        'NAME': 'mihan_banoo_db',
         'USER': 'mihan_banoo_user',
         'PASSWORD': 'BSAB2202@MBDB',
         'HOST': 'localhost',
@@ -128,8 +128,8 @@ if DEBUG:
         'base/static',
     ]
 else:
-    STATIC_ROOT = '/home/mihanbaanoocom/mihanbaanoo/public/static/'
-    MEDIA_ROOT = '/home/mihanbaanoocom/mihanbaanoo/public/media/'
+    STATIC_ROOT = '/home/mihanbaanoocom/public_html/static/'
+    MEDIA_ROOT = '/home/mihanbaanoocom/public_html/media/'
 
 # Custom User model
 AUTH_USER_MODEL = 'accounts.User'

@@ -1,8 +1,9 @@
-{% load i18n %}
+{% load i18n website_details %}
+{% get_current_language as current_language %}
 <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
         <div class="logo mr-auto">
-            <h1 class="text-light"><a href="index.html"><span>Delicious</span></a></h1>
+            <h1 class="text-light"><a href="index.html"><span>{% website_main_title %}</span></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
@@ -19,7 +20,7 @@
                     <form class="form-control-sm" action="{% url 'set_language' %}" method="post">
                         {% csrf_token %}
                         <select class="bg-transparent" name="language" id="language" onchange="this.form.submit()">
-                            {% if page_language == 'fa' %}
+                            {% if current_language == 'fa' %}
                                 <option value="fa">{% trans 'Persian' %}</option>
                                 <option value="en">{% trans 'English' %}</option>
                             {% else %}

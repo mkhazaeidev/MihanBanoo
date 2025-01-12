@@ -1,12 +1,11 @@
-{% load local_data %}
-{% load owner_info %}
-{% language as pages_language %}
+{% load i18n owner_info %}
+{% get_current_language as current_language %}
 <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container">
         <div class="row">
             <div class="col-6">
                 <i class="icofont-phone"></i>
-                {% if pages_language == "en" %}
+                {% if current_language == "en" %}
                     {% owner_phone_number_en %}
                 {% else %}
                     {% owner_phone_number_fa %}
@@ -19,23 +18,15 @@
                         {% if user.username %}
                             {{ user.username }}
                         {% else %}
-                            {% if pages_language == "en" %}
-                                Dashboard
-                            {% else %}
-                                پنل کاربری
-                            {% endif %}
+                            {% translate 'Dashboard' %}
                         {% endif %}
                         <a href="{% url 'accounts:logout' %}" class="text-danger">
-                            {% if pages_language == "en" %}
-                                (Logout)
-                            {% else %}
-                                (خروج)
-                            {% endif %}
+                            {% translate '(Logout)' %}
                         </a>
                     </a>
                 {% else %}
                     <a href="{% url 'accounts:login' %}">
-                        {% if pages_language == "en" %}
+                        {% if current_language == "en" %}
                             Login
                         {% else %}
                             ورود به حساب کاربری
