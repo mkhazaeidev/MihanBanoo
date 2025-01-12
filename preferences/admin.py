@@ -3,9 +3,9 @@ from preferences.models import *
 from pages.models import AboutUs
 
 
-# @admin.register(WebsiteDetails)
-# class WebsiteDetailsAdmin(admin.ModelAdmin):
-#     pass
+@admin.register(WebsiteDetails)
+class WebsiteDetailsAdmin(admin.ModelAdmin):
+    pass
 
 
 @admin.register(WebsiteOwner)

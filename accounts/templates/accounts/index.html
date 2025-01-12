@@ -1,8 +1,42 @@
 {% extends 'admin_panel/index.html' %}
-
+{% load i18n %}
 {% block title %}
-    Dashboard
+    {% translate 'Dashboard' %}
 {% endblock %}
 
 {% block main %}
+    <div class="row">
+        {% if app_list %}
+            {% for app in app_list %}
+                <div class="col-lg-6 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">{{ app.name }}</h4>
+                            <div class="single-table">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="text-uppercase bg-primary">
+                                        <tr class="text-white">
+                                            <th scope="col" colspan="2">{% translate 'Model Name' %}</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for model in app.models %}
+                                            <tr>
+                                                <th class="col-10" scope="row">{{ model.model_name }}</th>
+                                                <td><a href="{{ model.add_url }}">{% translate 'New' %}</a></td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+
+        {% endif %}
+    </div>
 {% endblock %}

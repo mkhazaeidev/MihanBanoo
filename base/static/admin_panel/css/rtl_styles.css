@@ -68,6 +68,8 @@
 }
 
 .card {
+    direction: rtl;
+    text-align: right;
     border: none;
     border-radius: 4px;
     background-color: #fff;

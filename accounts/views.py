@@ -2,6 +2,10 @@ from django.contrib.auth import views as auth_views
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views import generic
+from django.contrib import admin
+from django.apps import apps
+from django.urls import reverse
+from django.utils.translation import gettext_lazy as _
 
 
 class DashboardView(LoginRequiredMixin, generic.TemplateView):
@@ -9,6 +13,31 @@ class DashboardView(LoginRequiredMixin, generic.TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        app_list = []
+
+        # Iterate through all installed apps
+        for app in apps.get_app_configs():
+            models = []
+            for model in app.get_models():
+                if model in admin.site._registry:
+                    model_admin = admin.site._registry[model]
+                    model_info = {
+                        'model': model,
+                        'model_name': _(model._meta.verbose_name),
+                        'app_label': _(model._meta.app_label),
+                        'add_url': reverse(f'admin:{model._meta.app_label}_{model._meta.model_name}_add'),
+                        'change_url': reverse(f'admin:{model._meta.app_label}_{model._meta.model_name}_change',
+                                              args=[1]),  # Example ID
+                    }
+                    models.append(model_info)
+
+            if models:
+                app_list.append({
+                    'name': _(app.verbose_name),
+                    'label': _(app.label),
+                    'models': models,
+                })
+        context['app_list'] = app_list
         return context
 
 

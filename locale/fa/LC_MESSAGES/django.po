@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-29 22:39+0000\n"
+"POT-Creation-Date: 2025-01-12 12:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: accounts/apps.py:8
+msgid "Accounts"
+msgstr "حساب های کاربری"
+
+#: accounts/models.py:11
+msgid "Phone number"
+msgstr "تلفن تماس"
+
+#: accounts/models.py:17
+msgid "Name"
+msgstr "نام"
+
+#: accounts/templates/accounts/index.html:4
+#: base/templates/admin_panel/pages_title_area.html:6
+#: base/templates/admin_panel/pages_title_area.html:9
+#: base/templates/admin_panel/sidebar.html:13
+msgid "Dashboard"
+msgstr "داشبورد"
+
+#: accounts/templates/accounts/index.html:20
+msgid "Model Name"
+msgstr "نام جدول"
+
+#: accounts/templates/accounts/index.html:27
+msgid "New"
+msgstr "ایجاد"
+
 #: accounts/templates/accounts/login.html:9
 #: accounts/templates/accounts/login.html:19
 msgid "Login Page"
@@ -68,13 +96,17 @@ msgstr "بازنشانی رمز عبور"
 msgid ""
 "We've emailed you instructions for setting your password, if an account "
 "exists with the email you entered. You should receive them shortly."
-msgstr "اگر حسابی با ایمیلی که وارد کرده‌اید وجود داشته باشد، دستورالعمل‌های تنظیم رمز عبور را برای شما ایمیل کرده‌ایم. شما باید به زودی آنها را دریافت کنید."
+msgstr ""
+"اگر حسابی با ایمیلی که وارد کرده‌اید وجود داشته باشد، دستورالعمل‌های تنظیم رمز "
+"عبور را برای شما ایمیل کرده‌ایم. شما باید به زودی آنها را دریافت کنید."
 
 #: accounts/templates/accounts/password_change_done.html:22
 msgid ""
 "If you don't receive an email, please make sure you’ve entered the address "
 "you registered with, and check your spam folder."
-msgstr "اگر ایمیلی دریافت نکردید، لطفاً مطمئن شوید که آدرسی را که با آن ثبت نام کرده اید وارد کرده اید و پوشه هرزنامه خود را بررسی کنید."
+msgstr ""
+"اگر ایمیلی دریافت نکردید، لطفاً مطمئن شوید که آدرسی را که با آن ثبت نام کرده "
+"اید وارد کرده اید و پوشه هرزنامه خود را بررسی کنید."
 
 #: accounts/templates/accounts/password_change_done.html:26
 #: accounts/templates/accounts/password_reset_complete.html:27
@@ -86,6 +118,7 @@ msgstr "بازگشت به صفحه ورود"
 
 #: accounts/templates/accounts/password_change_form.html:9
 #: accounts/templates/accounts/password_change_form.html:19
+#: base/templates/admin_panel/sidebar.html:21
 msgid "Change Password"
 msgstr "تغییر رمز عبور"
 
@@ -93,7 +126,9 @@ msgstr "تغییر رمز عبور"
 msgid ""
 "Please enter your old password, for security's sake, and then enter your new "
 "password twice so we can verify you typed it in correctly."
-msgstr "لطفاً برای حفظ امنیت رمز عبور قدیمی خود را وارد کنید و سپس رمز عبور جدید خود را دو بار وارد کنید تا بتوانیم تأیید کنیم که آن را به درستی وارد کرده اید."
+msgstr ""
+"لطفاً برای حفظ امنیت رمز عبور قدیمی خود را وارد کنید و سپس رمز عبور جدید خود "
+"را دو بار وارد کنید تا بتوانیم تأیید کنیم که آن را به درستی وارد کرده اید."
 
 #: accounts/templates/accounts/password_change_form.html:26
 msgid "Back to Dashboard"
@@ -104,7 +139,9 @@ msgstr "بازگشت به داشبورد"
 msgid ""
 "If you don’t receive an email, please make sure you’ve entered the address "
 "you registered with, and check your spam folder."
-msgstr "اگر ایمیلی دریافت نکردید، لطفاً مطمئن شوید که آدرسی را که با آن ثبت نام کرده اید وارد کرده اید و پوشه هرزنامه خود را بررسی کنید."
+msgstr ""
+"اگر ایمیلی دریافت نکردید، لطفاً مطمئن شوید که آدرسی را که با آن ثبت نام کرده "
+"اید وارد کرده اید و پوشه هرزنامه خود را بررسی کنید."
 
 #: accounts/templates/accounts/password_reset_confirm.html:9
 #: accounts/templates/accounts/password_reset_confirm.html:19
@@ -118,14 +155,18 @@ msgstr "بازنشانی رمز عبور"
 msgid ""
 "Forgotten your password? Enter your email address below, and we'll email "
 "instructions for setting a new one."
-msgstr "رمز عبور خود را فراموش کرده اید؟ آدرس ایمیل خود را در زیر وارد کنید، و ما دستورالعمل‌هایی را برای تنظیم ایمیل جدید ارسال می‌کنیم."
+msgstr ""
+"رمز عبور خود را فراموش کرده اید؟ آدرس ایمیل خود را در زیر وارد کنید، و ما "
+"دستورالعمل‌هایی را برای تنظیم ایمیل جدید ارسال می‌کنیم."
 
 #: accounts/templates/accounts/password_reset_email.html:3
 #, python-format
 msgid ""
 "You're receiving this email because you requested a password reset for your "
 "user account at %(site_name)s."
-msgstr "شما این ایمیل را دریافت می‌کنید زیرا درخواست بازنشانی رمز عبور برای حساب کاربری خود در %(site_name) کرده‌اید."
+msgstr ""
+"شما این ایمیل را دریافت می‌کنید زیرا درخواست بازنشانی رمز عبور برای حساب "
+"کاربری خود در %(site_name) کرده‌اید."
 
 #: accounts/templates/accounts/password_reset_email.html:5
 msgid "Please go to the following page and choose a new password:"
@@ -133,7 +174,7 @@ msgstr "لطفا به صفحه زیر بروید و یک رمز عبور جدی�
 
 #: accounts/templates/accounts/password_reset_email.html:9
 msgid "Your username, in case you’ve forgotten:"
-msgstr ""
+msgstr "نام کاربری شما، در صورتی که فراموش کرده باشید:"
 
 #: accounts/templates/accounts/password_reset_email.html:11
 msgid "Thanks for using our site!"
@@ -144,9 +185,27 @@ msgstr "نام کاربری شما، در صورتی که فراموش کرده 
 msgid "The %(site_name)s team"
 msgstr "The %(site_name)s team"
 
+#: base/templates/admin_panel/header_area.html:14
+msgid "Search..."
+msgstr "جستجو..."
+
+#: base/templates/admin_panel/pages_title_area.html:8
 #: base/templates/base/header.html:13 pages/templates/pages/home_page.html:5
 msgid "Home"
 msgstr "خانه"
+
+#: base/templates/admin_panel/pages_title_area.html:19
+msgid "Profile"
+msgstr "پروفایل"
+
+#: base/templates/admin_panel/pages_title_area.html:20
+#: base/templates/admin_panel/sidebar.html:24
+msgid "Logout"
+msgstr "خروج"
+
+#: base/templates/admin_panel/sidebar.html:17
+msgid "Account"
+msgstr "حساب کاربری"
 
 #: base/templates/base/header.html:15
 msgid "Blogs"
@@ -190,6 +249,108 @@ msgstr "اسلاید ها"
 msgid "AboutUs"
 msgstr "درباره ما"
 
-#: preferences/models.py:62 preferences/models.py:63
+#: preferences/apps.py:8
+msgid "Preferences"
+msgstr "تنظیمات"
+
+#: preferences/models.py:12
+msgid "Page Title"
+msgstr "عنوان صفحه"
+
+#: preferences/models.py:14
+msgid "The name that appears at the top of the page as the title."
+msgstr "نامی که در بالای صفحه برای عنوان ظاهر می شود."
+
+#: preferences/models.py:19
+msgid "Main Title"
+msgstr "عنوان اصلی"
+
+#: preferences/models.py:21
+msgid "The name that is used as the main name of the site or as the site logo."
+msgstr "نامی که به عنوان نام اصلی سایت یا لوگوی سایت استفاده می شود."
+
+#: preferences/models.py:28
+msgid "Logo Image"
+msgstr "تصویر لوگو"
+
+#: preferences/models.py:34
+msgid "Logo Touch icon"
+msgstr "نماد لمسی لوگو"
+
+#: preferences/models.py:39
+msgid "Description"
+msgstr "توضیحات"
+
+#: preferences/models.py:41
+msgid "A brief explanation of the goals of the site."
+msgstr "توضیح مختصری در مورد اهداف سایت."
+
+#: preferences/models.py:45
+msgid "SEO Keywords"
+msgstr "کلمات کلیدی SEO"
+
+#: preferences/models.py:47
+msgid "Keywords to help Google search engine."
+msgstr "کلمات کلیدی برای کمک به موتور جستجوی گوگل"
+
+#: preferences/models.py:57 preferences/models.py:58
+msgid "Website Details"
+msgstr "جزئیات وب سایت"
+
+#: preferences/models.py:63
+msgid "Saturday"
+msgstr "شنبه"
+
+#: preferences/models.py:64
+msgid "Sunday"
+msgstr "یکشنبه"
+
+#: preferences/models.py:65
+msgid "Monday"
+msgstr "دوشنبه"
+
+#: preferences/models.py:66
+msgid "Tuesday"
+msgstr "سه شنبه"
+
+#: preferences/models.py:67
+msgid "Wednesday"
+msgstr "چهارشنبه"
+
+#: preferences/models.py:68
+msgid "Thursday"
+msgstr "پنج شنبه"
+
+#: preferences/models.py:69
+msgid "Friday"
+msgstr "جمعه"
+
+#: preferences/models.py:74
+#, fuzzy
+#| msgid "WebsiteOwner"
+msgid "Website Owner"
+msgstr "مالک سایت"
+
+#: preferences/models.py:75
+msgid "Select the site owner from among users to display contact information."
+msgstr "برای نمایش اطلاعات تماس، مالک سایت را از بین کاربران انتخاب کنید."
+
+#: preferences/models.py:79
+msgid "Start work time"
+msgstr "زمان شروع کار"
+
+#: preferences/models.py:85
+msgid "End work time"
+msgstr "زمان پایان کار"
+
+#: preferences/models.py:95
+msgid "The first working day of the week"
+msgstr "اولین روز کاری هفته"
+
+#: preferences/models.py:103
+msgid "Last working day of the week"
+msgstr "آخرین روز کاری هفته"
+
+#: preferences/models.py:113 preferences/models.py:114
 msgid "WebsiteOwner"
 msgstr "مالک سایت"
