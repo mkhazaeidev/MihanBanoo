@@ -1,5 +1,6 @@
 {% extends 'base/index.html' %}
 {% load i18n %}
+{% get_current_language as current_language %}
 
 {% block title %}
     {% translate 'Home' %}
@@ -17,140 +18,239 @@
     <main id="main">
         <section id="about" class="about">
             <div class="container-fluid">
-
-                <div class="row">
-
-                    <div class="col-lg-8 m-auto d-flex flex-column justify-content-center align-items-stretch">
-
-                        <div class="content">
-                            <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                            </p>
-                            <p class="font-italic">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore
-                                magna aliqua.
-                            </p>
-                            <ul>
-                                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.
-                                </li>
-                                <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in
-                                    voluptate velit.
-                                </li>
-                                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
-                                    storacalaperda mastiro dolore eu fugiat nulla pariatur.
-                                </li>
-                            </ul>
-                            <p>
-                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum
-                            </p>
+                {% if about_titles %}
+                    {% if current_language == 'en' %}
+                        <div class="section-title">
+                            <h2><span>{{ about_titles.en_title }}</span></h2>
+                            <p>{{ about_titles.en_subtitle }}</p>
                         </div>
-
+                    {% else %}
+                        <div class="section-title">
+                            <h2><span>{{ about_titles.en_title }}</span></h2>
+                            <p>{{ about_titles.en_subtitle }}</p>
+                        </div>
+                    {% endif %}
+                {% else %}
+                    <div class="section-title">
+                        <h2><span>About</span> Us</h2>
+                        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at
+                            voluptas atque vitae autem.</p>
                     </div>
+                {% endif %}
+                {% if about_details %}
+                    <div class="row">
+                        <div class="col-lg-8 m-auto d-flex flex-column justify-content-start align-items-stretch">
+                            <div class="content">
+                                {% if current_language == 'en' %}
 
-                </div>
+                                {% else %}
 
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="row">
+                        <div class="col-lg-8 m-auto d-flex flex-column justify-content-start align-items-stretch">
+                            <div class="content">
+                                <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                </p>
+                                <p class="font-italic">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore
+                                    magna aliqua.
+                                </p>
+                                <ul>
+                                    <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                    </li>
+                                    <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in
+                                        voluptate velit.
+                                    </li>
+                                    <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
+                                        storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                    non
+                                    proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
             </div>
         </section>
 
         <section id="why-us" class="why-us">
-            <div class="container">
+            {% if services_details %}
+                <div class="container">
 
-                <div class="section-title">
-                    <h2>Why choose <span>Our Restaurant</span></h2>
-                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
-                        atque vitae autem.</p>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-lg-4">
-                        <div class="box">
-                            <span>01</span>
-                            <h4>Lorem Ipsum</h4>
-                            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero
-                                placeat</p>
+                    {% if current_language == 'en' %}
+                        <div class="section-title">
+                            <h2><span>{{ services_titles.en_title }}</span></h2>
+                            <p>{{ services_titles.en_subtitle }}</p>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 mt-4 mt-lg-0">
-                        <div class="box">
-                            <span>02</span>
-                            <h4>Repellat Nihil</h4>
-                            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire
-                                leno para dest</p>
+                    {% else %}
+                        <div class="section-title">
+                            <h2><span>{{ services_titles.fa_title }}</span></h2>
+                            <p>{{ services_titles.fa_subtitle }}</p>
                         </div>
-                    </div>
+                    {% endif %}
 
-                    <div class="col-lg-4 mt-4 mt-lg-0">
-                        <div class="box">
-                            <span>03</span>
-                            <h4> Ad ad velit qui</h4>
-                            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam
-                                quis</p>
-                        </div>
+                    <div class="row">
+                        {% for services_detail in services_details %}
+                            <div class="col-lg-4">
+                                {% if current_language == 'en' %}
+                                    <div class="box">
+                                        <h4>{{ services_detail.en_title }}</h4>
+                                        <p>{{ services_detail.en_description }}</p>
+                                    </div>
+                                {% else %}
+                                    <div class="box">
+                                        <h4>{{ services_detail.fa_title }}</h4>
+                                        <p>{{ services_detail.fa_description }}</p>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
                     </div>
 
                 </div>
+            {% else %}
+                <div class="container">
 
-            </div>
+                    <div class="section-title">
+                        <h2>Why choose <span>Our Restaurant</span></h2>
+                        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at
+                            voluptas atque vitae autem.</p>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4">
+                            <div class="box">
+                                <h4>Lorem Ipsum</h4>
+                                <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero
+                                    placeat</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-4 mt-lg-0">
+                            <div class="box">
+                                <h4>Repellat Nihil</h4>
+                                <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel
+                                    dire leno para dest</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-4 mt-lg-0">
+                            <div class="box">
+                                <h4> Ad ad velit qui</h4>
+                                <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel
+                                    nam quis</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            {% endif %}
         </section>
 
         <section id="contact" class="contact">
             <div class="container">
-
-                <div class="section-title">
-                    <h2><span>Contact</span> Us</h2>
-                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
-                        atque vitae autem.</p>
-                </div>
-            </div>
-
-            <div class="map">
-                <iframe style="border:0; width: 100%; height: 350px;"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                        frameborder="0" allowfullscreen></iframe>
+                {% if contact_titles %}
+                    {% if current_language == 'en' %}
+                        <div class="section-title">
+                            <h2><span>{{ contact_titles.en_title }}</span></h2>
+                            <p>{{ contact_titles.en_subtitle }}</p>
+                        </div>
+                    {% else %}
+                        <div class="section-title">
+                            <h2><span>{{ contact_titles.en_title }}</span></h2>
+                            <p>{{ contact_titles.en_subtitle }}</p>
+                        </div>
+                    {% endif %}
+                {% else %}
+                    <div class="section-title">
+                        <h2><span>Contact</span> Us</h2>
+                        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at
+                            voluptas
+                            atque vitae autem.</p>
+                    </div>
+                {% endif %}
             </div>
 
             <div class="container mt-5">
 
-                <div class="info-wrap">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 info">
-                            <i class="icofont-google-map"></i>
-                            <h4>Location:</h4>
-                            <p>A108 Adam Street<br>New York, NY 535022</p>
-                        </div>
+                {% if owner %}
+                    <div class="info-wrap">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 info">
+                                <i class="icofont-google-map"></i>
+                                <h4>{% translate 'Location' %}:</h4>
+                                <p>{% translate 'Owner Address' %}</p>
+                            </div>
 
-                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-                            <i class="icofont-clock-time icofont-rotate-90"></i>
-                            <h4>Open Hours:</h4>
-                            <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
-                        </div>
+                            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                                <i class="icofont-clock-time icofont-rotate-90"></i>
+                                <h4>{% translate 'Open Hours' %}:</h4>
+                                <p></p>
+                            </div>
 
-                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-                            <i class="icofont-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>info@example.com<br>contact@example.com</p>
-                        </div>
+                            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                                <i class="icofont-envelope"></i>
+                                <h4>{% translate 'Email' %}:</h4>
+                                <p>{{ owner.owner.email }}</p>
+                            </div>
 
-                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-                            <i class="icofont-phone"></i>
-                            <h4>Call:</h4>
-                            <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+                            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                                <i class="icofont-phone"></i>
+                                <h4>{% translate 'Call' %}:</h4>
+                                <p>{{ owner.owner.phone_number }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                {% else %}
+                    <div class="info-wrap">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 info">
+                                <i class="icofont-google-map"></i>
+                                <h4>{% translate 'Location' %}:</h4>
+                                <p>{% translate 'Owner Address' %}/p>
+                            </div>
 
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                                <i class="icofont-clock-time icofont-rotate-90"></i>
+                                <h4>{% translate 'Open Hours' %}:</h4>
+                                <p>{% translate 'Monday' %}-{% translate 'Saturday' %}:<br>11:00 AM - 2300 PM</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                                <i class="icofont-envelope"></i>
+                                <h4>{% translate 'Email' %}:</h4>
+                                <p>info@example.com<br>contact@example.com</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                                <i class="icofont-phone"></i>
+                                <h4>{% translate 'Call' %}:</h4>
+                                <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+
+                <form action="" method="post" role="form" class="php-email-form">
                     <div class="form-row">
                         <div class="col-md-6 form-group">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"

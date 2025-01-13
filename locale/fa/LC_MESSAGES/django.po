@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-12 23:56+0000\n"
+"POT-Creation-Date: 2025-01-13 01:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,7 +191,7 @@ msgid "Search..."
 msgstr "جستجو..."
 
 #: base/templates/admin_panel/pages_title_area.html:8
-#: base/templates/base/header.html:14 pages/templates/pages/home_page.html:5
+#: base/templates/base/header.html:14 pages/templates/pages/home_page.html:6
 msgid "Home"
 msgstr "خانه"
 
@@ -220,15 +220,16 @@ msgstr "تمامی حقوق محفوظ است"
 msgid "Designed by "
 msgstr "طراحی شده توسط "
 
-#: base/templates/base/header.html:16
-msgid "Blogs"
-msgstr "وبلاگ"
-
-#: base/templates/base/header.html:17
+#: base/templates/base/header.html:16 preferences/models.py:132
 msgid "About"
 msgstr "درباره ما"
 
-#: base/templates/base/header.html:18
+#: base/templates/base/header.html:17 pages/models.py:56 pages/models.py:57
+#: preferences/models.py:133
+msgid "Services"
+msgstr "خدمات"
+
+#: base/templates/base/header.html:18 preferences/models.py:134
 msgid "Contact"
 msgstr "ارتباط با ما"
 
@@ -298,7 +299,8 @@ msgstr "اسلایدر عکس"
 msgid ""
 "For display in database tables only. The main title is in the section title "
 "section."
-msgstr "فقط برای نمایش در جداول پایگاه داده و عنوان اصلی در قسمت عنوان بخش است."
+msgstr ""
+"فقط برای نمایش در جداول پایگاه داده و عنوان اصلی در قسمت عنوان بخش است."
 
 #: pages/models.py:31 pages/models.py:47
 msgid "English description"
@@ -312,9 +314,33 @@ msgstr "توضیحات فارسی"
 msgid "AboutUs"
 msgstr "درباره ما"
 
-#: pages/models.py:56 pages/models.py:57
-msgid "Services"
-msgstr "خدمات"
+#: pages/templates/pages/home_page.html:228
+msgid "Location"
+msgstr "موقعیت"
+
+#: pages/templates/pages/home_page.html:229
+msgid "Owner Address"
+msgstr "آدرس مالک سایت"
+
+#: pages/templates/pages/home_page.html:234
+msgid "Open Hours"
+msgstr "ساعت کاری"
+
+#: pages/templates/pages/home_page.html:235 preferences/models.py:79
+msgid "Monday"
+msgstr "دوشنبه"
+
+#: pages/templates/pages/home_page.html:235 preferences/models.py:77
+msgid "Saturday"
+msgstr "شنبه"
+
+#: pages/templates/pages/home_page.html:240
+msgid "Email"
+msgstr "ایمیل"
+
+#: pages/templates/pages/home_page.html:246
+msgid "Call"
+msgstr "تماس"
 
 #: preferences/apps.py:8
 msgid "Preferences"
@@ -372,17 +398,9 @@ msgstr "کلمات کلیدی برای کمک به موتور جستجوی گو�
 msgid "Website Details"
 msgstr "جزئیات وب سایت"
 
-#: preferences/models.py:77
-msgid "Saturday"
-msgstr "شنبه"
-
 #: preferences/models.py:78
 msgid "Sunday"
 msgstr "یکشنبه"
-
-#: preferences/models.py:79
-msgid "Monday"
-msgstr "دوشنبه"
 
 #: preferences/models.py:80
 msgid "Tuesday"
@@ -419,6 +437,34 @@ msgstr "اولین روز کاری هفته"
 #: preferences/models.py:116
 msgid "Last working day of the week"
 msgstr "آخرین روز کاری هفته"
+
+#: preferences/models.py:135
+msgid "Footer"
+msgstr "فوتر"
+
+#: preferences/models.py:138
+msgid "Section Name"
+msgstr "نام بخش"
+
+#: preferences/models.py:139
+msgid "English Title"
+msgstr "عنوان انگلیسی"
+
+#: preferences/models.py:140
+msgid "Persian Title"
+msgstr "عنوان فارسی"
+
+#: preferences/models.py:141
+msgid "English Subtitle"
+msgstr "زیر عنوان انگلیسی"
+
+#: preferences/models.py:142
+msgid "Persian Subtitle"
+msgstr "زیر عنوان فارسی"
+
+#: preferences/models.py:148 preferences/models.py:149
+msgid "Titles"
+msgstr "عناوین"
 
 #: preferences/templatetags/owner_info.py:17
 msgid "Owner Name"
@@ -460,6 +506,9 @@ msgstr "توضیحات وب سایت"
 #: preferences/templatetags/website_details.py:57
 msgid "Website Seo Keyword"
 msgstr "کلمات کلیدی وب سایت"
+
+#~ msgid "Blogs"
+#~ msgstr "وبلاگ"
 
 #~ msgid ""
 #~ "Select the site owner from among users to display contact information."

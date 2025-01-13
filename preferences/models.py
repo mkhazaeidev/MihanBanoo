@@ -125,3 +125,25 @@ class WebsiteOwner(SingletonModel):
     class Meta:
         verbose_name = _('Website Owner')
         verbose_name_plural = _('Website Owner')
+
+
+class Titles(models.Model):
+    SECTIONS = (
+        ('about', _("About")),
+        ('services', _("Services")),
+        ('contact', _("Contact")),
+        ('footer', _("Footer")),
+    )
+
+    section = models.CharField(max_length=10, choices=SECTIONS, verbose_name=_("Section Name"), unique=True)
+    en_title = models.CharField(max_length=50, verbose_name=_("English Title"))
+    fa_title = models.CharField(max_length=50, verbose_name=_("Persian Title"))
+    en_subtitle = models.CharField(max_length=400, blank=True, verbose_name=_("English Subtitle"))
+    fa_subtitle = models.CharField(max_length=400, blank=True, verbose_name=_("Persian Subtitle"))
+
+    def __str__(self):
+        return self.get_section_display()
+
+    class Meta:
+        verbose_name = _("Titles")
+        verbose_name_plural = _("Titles")
