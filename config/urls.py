@@ -6,6 +6,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('main_panel_admin/', admin.site.urls),
+    path('accounts/profiles/', include('profiles.urls', namespace='profiles')),
     path('accounts/', include('accounts.urls', namespace='accounts')),
     path('', include('pages.urls', namespace='pages')),
 ]

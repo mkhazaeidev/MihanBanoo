@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-13 01:10+0000\n"
+"POT-Creation-Date: 2025-01-13 10:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
 #: accounts/apps.py:8
 msgid "Accounts"
 msgstr "حساب های کاربری"
@@ -38,11 +37,11 @@ msgstr "نام"
 msgid "Dashboard"
 msgstr "داشبورد"
 
-#: accounts/templates/accounts/index.html:20
+#: accounts/templates/accounts/index.html:21
 msgid "Model Name"
 msgstr "نام جدول"
 
-#: accounts/templates/accounts/index.html:27
+#: accounts/templates/accounts/index.html:30
 msgid "New"
 msgstr "جدید"
 
@@ -72,7 +71,7 @@ msgstr "ارسال"
 
 #: accounts/templates/accounts/login.html:41
 msgid "Back to Home"
-msgstr "بازگشت به صفحه اصلی"
+msgstr "بازگشت به خانه"
 
 #: accounts/templates/accounts/login.html:44
 msgid "Don't have an account?"
@@ -97,17 +96,13 @@ msgstr "بازنشانی رمز عبور"
 msgid ""
 "We've emailed you instructions for setting your password, if an account "
 "exists with the email you entered. You should receive them shortly."
-msgstr ""
-"اگر حسابی با ایمیلی که وارد کرده‌اید وجود داشته باشد، دستورالعمل‌های تنظیم رمز "
-"عبور را برای شما ایمیل کرده‌ایم. شما باید به زودی آنها را دریافت کنید."
+msgstr "اگر حسابی با ایمیلی که وارد کرده‌اید وجود داشته باشد، دستورالعمل‌های تنظیم رمز عبور را برای شما ایمیل کرده‌ایم. شما باید به زودی آنها را دریافت کنید."
 
 #: accounts/templates/accounts/password_change_done.html:22
 msgid ""
 "If you don't receive an email, please make sure you’ve entered the address "
 "you registered with, and check your spam folder."
-msgstr ""
-"اگر ایمیلی دریافت نکردید، لطفاً مطمئن شوید که آدرسی را که با آن ثبت نام کرده "
-"اید وارد کرده اید و پوشه هرزنامه خود را بررسی کنید."
+msgstr "اگر ایمیلی دریافت نکردید، لطفاً مطمئن شوید که آدرسی را که با آن ثبت نام کرده اید وارد کرده اید و پوشه هرزنامه خود را بررسی کنید."
 
 #: accounts/templates/accounts/password_change_done.html:26
 #: accounts/templates/accounts/password_reset_complete.html:27
@@ -127,9 +122,7 @@ msgstr "تغییر رمز عبور"
 msgid ""
 "Please enter your old password, for security's sake, and then enter your new "
 "password twice so we can verify you typed it in correctly."
-msgstr ""
-"لطفاً برای حفظ امنیت رمز عبور قدیمی خود را وارد کنید و سپس رمز عبور جدید خود "
-"را دو بار وارد کنید تا بتوانیم تأیید کنیم که آن را به درستی وارد کرده اید."
+msgstr "لطفاً برای حفظ امنیت رمز عبور قدیمی خود را وارد کنید و سپس رمز عبور جدید خود را دو بار وارد کنید تا بتوانیم تأیید کنیم که آن را به درستی وارد کرده اید."
 
 #: accounts/templates/accounts/password_change_form.html:26
 msgid "Back to Dashboard"
@@ -140,9 +133,7 @@ msgstr "بازگشت به داشبورد"
 msgid ""
 "If you don’t receive an email, please make sure you’ve entered the address "
 "you registered with, and check your spam folder."
-msgstr ""
-"اگر ایمیلی دریافت نکردید، لطفاً مطمئن شوید که آدرسی را که با آن ثبت نام کرده "
-"اید وارد کرده اید و پوشه هرزنامه خود را بررسی کنید."
+msgstr "اگر ایمیلی دریافت نکردید، لطفاً مطمئن شوید که آدرسی را که با آن ثبت نام کرده اید وارد کرده اید و پوشه هرزنامه خود را بررسی کنید."
 
 #: accounts/templates/accounts/password_reset_confirm.html:9
 #: accounts/templates/accounts/password_reset_confirm.html:19
@@ -156,18 +147,14 @@ msgstr "بازنشانی رمز عبور"
 msgid ""
 "Forgotten your password? Enter your email address below, and we'll email "
 "instructions for setting a new one."
-msgstr ""
-"رمز عبور خود را فراموش کرده اید؟ آدرس ایمیل خود را در زیر وارد کنید، و ما "
-"دستورالعمل‌هایی را برای تنظیم ایمیل جدید ارسال می‌کنیم."
+msgstr "رمز عبور خود را فراموش کرده اید؟ آدرس ایمیل خود را در زیر وارد کنید، و ما دستورالعمل‌هایی را برای تنظیم ایمیل جدید ارسال می‌کنیم."
 
 #: accounts/templates/accounts/password_reset_email.html:3
 #, python-format
 msgid ""
 "You're receiving this email because you requested a password reset for your "
 "user account at %(site_name)s."
-msgstr ""
-"شما این ایمیل را دریافت می‌کنید زیرا درخواست بازنشانی رمز عبور برای حساب "
-"کاربری خود در %(site_name) کرده‌اید."
+msgstr "شما این ایمیل را دریافت می‌کنید زیرا درخواست بازنشانی رمز عبور برای حساب کاربری خود در %(site_name) کرده‌اید."
 
 #: accounts/templates/accounts/password_reset_email.html:5
 msgid "Please go to the following page and choose a new password:"
@@ -179,12 +166,12 @@ msgstr "نام کاربری شما، در صورتی که فراموش کرده 
 
 #: accounts/templates/accounts/password_reset_email.html:11
 msgid "Thanks for using our site!"
-msgstr "نام کاربری شما، در صورتی که فراموش کرده باشید:"
+msgstr "با تشکر از استفاده از سایت ما!"
 
 #: accounts/templates/accounts/password_reset_email.html:13
 #, python-format
 msgid "The %(site_name)s team"
-msgstr "The %(site_name)s team"
+msgstr "%(site_name) تیم"
 
 #: base/templates/admin_panel/header_area.html:14
 msgid "Search..."
@@ -234,12 +221,12 @@ msgid "Contact"
 msgstr "ارتباط با ما"
 
 #: base/templates/base/header.html:24 base/templates/base/header.html:28
-#: config/settings.py:113
+#: config/settings.py:114
 msgid "Persian"
 msgstr "فارسی"
 
 #: base/templates/base/header.html:25 base/templates/base/header.html:27
-#: config/settings.py:112
+#: config/settings.py:113
 msgid "English"
 msgstr "انگلیسی"
 
@@ -249,7 +236,7 @@ msgstr "ارتباط با ما"
 
 #: base/templates/base/top_bar.html:24
 msgid "(Logout)"
-msgstr "(خروج)"
+msgstr "(خروج از حساب کاربری)"
 
 #: pages/apps.py:8
 msgid "Pages"
@@ -265,7 +252,7 @@ msgstr "عنوان فارسی"
 
 #: pages/models.py:9
 msgid "Image"
-msgstr "تصویر"
+msgstr "عکس"
 
 #: pages/models.py:10
 msgid "Used to display in the background of a slide."
@@ -293,14 +280,13 @@ msgstr "اسلایدر عکس"
 
 #: pages/models.py:23
 msgid "PhotoSliders"
-msgstr "اسلایدر عکس"
+msgstr "اسلایدرهای عکس"
 
 #: pages/models.py:28 pages/models.py:30
 msgid ""
 "For display in database tables only. The main title is in the section title "
 "section."
-msgstr ""
-"فقط برای نمایش در جداول پایگاه داده و عنوان اصلی در قسمت عنوان بخش است."
+msgstr "فقط برای نمایش در جداول پایگاه داده و عنوان اصلی در قسمت عنوان بخش است."
 
 #: pages/models.py:31 pages/models.py:47
 msgid "English description"
@@ -314,17 +300,30 @@ msgstr "توضیحات فارسی"
 msgid "AboutUs"
 msgstr "درباره ما"
 
+#: pages/templates/pages/home_page.html:200
 #: pages/templates/pages/home_page.html:228
 msgid "Location"
-msgstr "موقعیت"
+msgstr "مکان"
 
+#: pages/templates/pages/home_page.html:201
 #: pages/templates/pages/home_page.html:229
 msgid "Owner Address"
-msgstr "آدرس مالک سایت"
+msgstr "آدرس مالک"
 
+#: pages/templates/pages/home_page.html:206
 #: pages/templates/pages/home_page.html:234
 msgid "Open Hours"
-msgstr "ساعت کاری"
+msgstr "ساعات کار"
+
+#: pages/templates/pages/home_page.html:212
+#: pages/templates/pages/home_page.html:240
+msgid "Email"
+msgstr "ایمیل"
+
+#: pages/templates/pages/home_page.html:218
+#: pages/templates/pages/home_page.html:246
+msgid "Call"
+msgstr "تماس"
 
 #: pages/templates/pages/home_page.html:235 preferences/models.py:79
 msgid "Monday"
@@ -334,25 +333,17 @@ msgstr "دوشنبه"
 msgid "Saturday"
 msgstr "شنبه"
 
-#: pages/templates/pages/home_page.html:240
-msgid "Email"
-msgstr "ایمیل"
-
-#: pages/templates/pages/home_page.html:246
-msgid "Call"
-msgstr "تماس"
-
 #: preferences/apps.py:8
 msgid "Preferences"
 msgstr "تنظیمات"
 
 #: preferences/models.py:12
 msgid "English Page Title"
-msgstr "عنوان انگلیسی صفحه"
+msgstr "عنوان صفحه انگلیسی"
 
 #: preferences/models.py:14 preferences/models.py:21
 msgid "The name that appears at the top of the page as the title."
-msgstr "نامی که در بالای صفحه برای عنوان ظاهر می شود."
+msgstr "نامی که در بالای صفحه به عنوان عنوان ظاهر می شود."
 
 #: preferences/models.py:19
 msgid "Page Title"
@@ -360,7 +351,7 @@ msgstr "عنوان صفحه"
 
 #: preferences/models.py:26
 msgid "English Main Title"
-msgstr "عنوان انگلیسی اصلی"
+msgstr "عنوان اصلی انگلیسی"
 
 #: preferences/models.py:28 preferences/models.py:35
 msgid "The name that is used as the main name of the site or as the site logo."
@@ -396,7 +387,7 @@ msgstr "کلمات کلیدی برای کمک به موتور جستجوی گو�
 
 #: preferences/models.py:71 preferences/models.py:72
 msgid "Website Details"
-msgstr "جزئیات وب سایت"
+msgstr "مشخصات وب سایت"
 
 #: preferences/models.py:78
 msgid "Sunday"
@@ -424,23 +415,23 @@ msgstr "مالک سایت"
 
 #: preferences/models.py:92
 msgid "Start work time"
-msgstr "زمان شروع کار"
+msgstr "شروع زمان کار"
 
 #: preferences/models.py:98
 msgid "End work time"
-msgstr "زمان پایان کار"
+msgstr "پایان زمان کار"
 
 #: preferences/models.py:108
 msgid "The first working day of the week"
-msgstr "اولین روز کاری هفته"
+msgstr "اولین روزکاری در هفتخ"
 
 #: preferences/models.py:116
 msgid "Last working day of the week"
-msgstr "آخرین روز کاری هفته"
+msgstr "آخرین روز کاری در هفته"
 
 #: preferences/models.py:135
 msgid "Footer"
-msgstr "فوتر"
+msgstr "پاورقی"
 
 #: preferences/models.py:138
 msgid "Section Name"
@@ -468,28 +459,28 @@ msgstr "عناوین"
 
 #: preferences/templatetags/owner_info.py:17
 msgid "Owner Name"
-msgstr "نام مالک سایت"
+msgstr "نا مالک"
 
 #: preferences/templatetags/owner_info.py:26
 #: preferences/templatetags/owner_info.py:35
 msgid "Owner Phone Number"
-msgstr "تلفن مالک سایت"
+msgstr "تلفن مالک"
 
 #: preferences/templatetags/owner_info.py:44
 msgid "Owner Email"
-msgstr "ایمیل مالک سایت"
+msgstr "ایمیل مالک"
 
 #: preferences/templatetags/owner_info.py:58
 msgid "Owner Work Time"
-msgstr "تایم کاری مالک سایت"
+msgstr "ساعت کاری مالک"
 
 #: preferences/templatetags/owner_info.py:67
 msgid "Owner Address "
-msgstr "آدرس مالک سایت"
+msgstr "آدرس مالک"
 
 #: preferences/templatetags/website_details.py:18
 msgid "Website Page Name"
-msgstr "نام وب سایت"
+msgstr "نام صفحه وب سایت"
 
 #: preferences/templatetags/website_details.py:30
 msgid "Website Title"
@@ -497,7 +488,7 @@ msgstr "عنوان وب سایت"
 
 #: preferences/templatetags/website_details.py:39
 msgid "Website Logo Image"
-msgstr "تصویر لوگو وب سایت"
+msgstr "تصویر لوگوی وب سایت"
 
 #: preferences/templatetags/website_details.py:48
 msgid "Website Description"
@@ -505,14 +496,148 @@ msgstr "توضیحات وب سایت"
 
 #: preferences/templatetags/website_details.py:57
 msgid "Website Seo Keyword"
-msgstr "کلمات کلیدی وب سایت"
+msgstr "کلمات کلیدی SEO سایت"
 
-#~ msgid "Blogs"
-#~ msgstr "وبلاگ"
+#: profiles/apps.py:8
+msgid "Profiles"
+msgstr "پروفایل ها"
 
-#~ msgid ""
-#~ "Select the site owner from among users to display contact information."
-#~ msgstr "برای نمایش اطلاعات تماس، مالک سایت را از بین کاربران انتخاب کنید."
+#: profiles/models.py:10
+msgid "Male"
+msgstr "آقا"
 
-#~ msgid "WebsiteOwner"
-#~ msgstr "مالک سایت"
+#: profiles/models.py:11
+msgid "Female"
+msgstr "خانم"
+
+#: profiles/models.py:12
+msgid "Other"
+msgstr "سایر"
+
+#: profiles/models.py:16
+msgid "Married"
+msgstr "متاهل"
+
+#: profiles/models.py:17
+msgid "Single"
+msgstr "مجرد"
+
+#: profiles/models.py:24
+msgid "User"
+msgstr "کاربر"
+
+#: profiles/models.py:31
+msgid "Avatar"
+msgstr "تصویر پروفایل"
+
+#: profiles/models.py:33
+msgid "Gender"
+msgstr "جنسیت"
+
+#: profiles/models.py:34 profiles/models.py:49
+msgid "Birthday"
+msgstr "تاریخ تولد"
+
+#: profiles/models.py:35
+msgid "Marriage"
+msgstr "وضعیت تاهل"
+
+#: profiles/models.py:36
+msgid "Education"
+msgstr "تحصیلات"
+
+#: profiles/models.py:37
+msgid "Job"
+msgstr "شغل"
+
+#: profiles/models.py:52
+msgid "User Profile"
+msgstr "پروفایل کاربر"
+
+#: profiles/models.py:53
+msgid "User Profiles"
+msgstr "پروفایل کاربران"
+
+#: profiles/models.py:73 profiles/models.py:93
+msgid "User Name"
+msgstr "نام کاربر"
+
+#: profiles/models.py:75
+msgid "Application Name"
+msgstr "نام برنامه"
+
+#: profiles/models.py:79
+msgid "Link"
+msgstr "لینک"
+
+#: profiles/models.py:80
+msgid "Username"
+msgstr "نام کاربری"
+
+#: profiles/models.py:88
+msgid "User Social Media Profile"
+msgstr "شبکه اجتماعی کاربر"
+
+#: profiles/models.py:89
+msgid "User Social Media Profiles"
+msgstr "شبکه های اجتماعی کاربر"
+
+#: profiles/models.py:94
+msgid "Iran"
+msgstr "ایران"
+
+#: profiles/models.py:94
+msgid "Country"
+msgstr "کشور"
+
+#: profiles/models.py:95
+msgid "Province"
+msgstr "استان"
+
+#: profiles/models.py:96
+msgid "City"
+msgstr "شهر"
+
+#: profiles/models.py:97
+msgid "Main Street"
+msgstr "خیابان اصلی"
+
+#: profiles/models.py:98
+msgid "Auxiliary Street"
+msgstr "خیابان فرعی"
+
+#: profiles/models.py:99
+msgid "Street"
+msgstr "کوچه"
+
+#: profiles/models.py:100
+msgid "Building Number"
+msgstr "پلاک"
+
+#: profiles/models.py:102
+msgid "Building Unit Number"
+msgstr "واحد"
+
+#: profiles/models.py:103
+msgid "Postal Code"
+msgstr "کد پستی"
+
+#: profiles/models.py:104
+msgid "Phone Number"
+msgstr "تلفن تماس"
+
+#: profiles/models.py:132
+msgid "User Address"
+msgstr "آدرس کاربر"
+
+#: profiles/models.py:133
+msgid "User Addresses"
+msgstr "آدرس های کاربر"
+
+#: templates/admin/base_site.html:4
+msgid "MihanBaanoo site admin"
+msgstr "پنل ادمین میهن بانو"
+
+#: templates/admin/base_site.html:8
+msgid "MihanBaanoo administration"
+msgstr "مدیریت میهن بانو"

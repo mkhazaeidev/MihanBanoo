@@ -17,7 +17,7 @@ class User(AbstractUser):
     get_fullname.short_description = _("Name")
 
     def __str__(self):
-        return self.get_fullname() + f'({self.username})'
+        return f"{self.get_fullname()} ({self.username})"
 
     def get_absolute_url(self):
         return reverse('accounts:dashboard')

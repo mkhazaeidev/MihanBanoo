@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     "accounts.apps.AccountsConfig",
     "preferences.apps.PreferencesConfig",
     "pages.apps.PagesConfig",
+    "profiles.apps.ProfilesConfig",
 
     # Third Party Apps
     'phonenumber_field',
