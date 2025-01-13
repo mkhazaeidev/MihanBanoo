@@ -1,6 +1,5 @@
 from django.contrib import admin
 from preferences.models import *
-from pages.models import AboutUs
 
 
 @admin.register(WebsiteDetails)
@@ -21,8 +20,3 @@ class WebsiteOwnerAdmin(admin.ModelAdmin):
 # @admin.register(Titles)
 # class TitlesAdmin(admin.ModelAdmin):
 #     list_display = ['section', 'title', 'description']
-
-
-@admin.register(AboutUs)
-class AboutUsAdmin(admin.ModelAdmin):
-    list_display = ['en_title']

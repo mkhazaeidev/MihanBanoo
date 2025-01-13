@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-12 23:18+0000\n"
+"POT-Creation-Date: 2025-01-12 23:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -254,17 +254,67 @@ msgstr "(خروج)"
 msgid "Pages"
 msgstr "صفحات"
 
+#: pages/models.py:7 pages/models.py:27 pages/models.py:45
+msgid "English title"
+msgstr "عنوان انگلیسی"
+
+#: pages/models.py:8 pages/models.py:29 pages/models.py:46
+msgid "Persian title"
+msgstr "عنوان فارسی"
+
+#: pages/models.py:9
+msgid "Image"
+msgstr "تصویر"
+
+#: pages/models.py:10
+msgid "Used to display in the background of a slide."
+msgstr "برای نمایش در پس زمینه یک اسلاید استفاده می شود."
+
+#: pages/models.py:11
+msgid "English text"
+msgstr "متن انگلیسی"
+
+#: pages/models.py:12
+msgid "Persian text"
+msgstr "متن فارسی"
+
+#: pages/models.py:13
+msgid "Display order"
+msgstr "ترتیب نمایش"
+
+#: pages/models.py:14
+msgid "Specify the slide display order, which slide should be the first."
+msgstr "ترتیب نمایش اسلاید را مشخص کنید که کدام اسلاید باید اولین باشد."
+
 #: pages/models.py:22
 msgid "PhotoSlider"
-msgstr "اسلاید"
+msgstr "اسلایدر عکس"
 
 #: pages/models.py:23
 msgid "PhotoSliders"
-msgstr "اسلاید ها"
+msgstr "اسلایدر عکس"
+
+#: pages/models.py:28 pages/models.py:30
+msgid ""
+"For display in database tables only. The main title is in the section title "
+"section."
+msgstr "فقط برای نمایش در جداول پایگاه داده و عنوان اصلی در قسمت عنوان بخش است."
+
+#: pages/models.py:31 pages/models.py:47
+msgid "English description"
+msgstr "توضیحات انگلیسی"
+
+#: pages/models.py:32 pages/models.py:48
+msgid "Persian description"
+msgstr "توضیحات فارسی"
 
 #: pages/models.py:40 pages/models.py:41
 msgid "AboutUs"
 msgstr "درباره ما"
+
+#: pages/models.py:56 pages/models.py:57
+msgid "Services"
+msgstr "خدمات"
 
 #: preferences/apps.py:8
 msgid "Preferences"
